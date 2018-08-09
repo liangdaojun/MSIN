@@ -10,7 +10,7 @@ Different designs of the initial and final block of the basic network will resul
 
 We use MSIN-B to train on different datasets to get its generalization performance for simultaneous multi-task prediction. Its training process in different datasets is shown in Fig. 3. Note that each training task is trained simultaneously, except for the CIFAR-10 and SVHN datasets in Fig. 3.c. Fig. 3 shows the training and the test accuracy of the MSIN-B network on various datasets. Each task is almost unaffected by other tasks during training, which is almost indistinguishable from training the task alone.
 
-<img src="https://github.com/liangdaojun/MSIN/blob/master/images/msin_4.jpg" width="480">
+<img src="https://github.com/liangdaojun/MSIN/blob/master/images/msin_4.jpg" width="720">
 
 Fig. 4 shows the performance of the MSIN on a multi-sample domain. It can be found that the MSIN can separate all the samples on the four different domains. The performance of the MSIN is slightly lower when predicting the four sample domains than when predicting the three sample domains. Compared with the single-sample inference network, the performance of the MSIN is slightly decline, but the availability of the MSIN is basically guaranteed. We believe that the performance of MSIN can be enhanced by some methods, and we will leave this work for the future.
 
