@@ -29,11 +29,11 @@ Fig. 4 shows the performance of the MSIN on a multi-sample domain. It can be fou
 Test results on various datasets. 
 
 
-|Model type        | C0    : MNIST  | C100  : MNIST | C10   : C100   |  C10  : SVHN   |
+|Model type        | C10    : MNIST | C100  : MNIST | C10   : C100   |  C10  : SVHN   |
 | --------         | -------------: |:------------: |:-------------: | :------------: |
 |original category |  5.8  :  0.8   | 25.8  : 0.8   | 5.8   : 25.8   |  5.8   : 3.7   |
 |multiple category |  6.2  :  0.8   | 26.5  : 0.8   | 6.8   : 31.4   |  8.8   : 3.9   |
 |single   category |  6.3  :  0.8   | 26.7  : 0.8   | 7.0   : 32.1   |  9.1   : 3.9   |
 
 ## Acknowledgement
-This reimplementation are adapted from the [pytorch-cifar](https://github.com/kuangliu/pytorch-cifar) repository by [ikhlestov] (https://github.com/kuangliu) and  [densenet-pytorch](https://github.com/andreasveit/densenet-pytorch) repository by [andreasveit] (https://github.com/andreasveit).
+This reimplementation are adapted from the [pytorch-cifar](https://github.com/kuangliu/pytorch-cifar) repository by [ikhlestov](https://github.com/kuangliu) and  [densenet-pytorch](https://github.com/andreasveit/densenet-pytorch) repository by [andreasveit](https://github.com/andreasveit).
