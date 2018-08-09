@@ -8,15 +8,21 @@ The Multi-Sample Reasoning Network (MSIN) proved the interesting fact that the n
 
 Different designs of the initial and final block of the basic network will result in variants of other MSINs. The network that uses a convolution layer as an independent structure in the initial block are denoted as MSIN-I1 (the number represents the number of layers), and the network that uses one block structure (two convolution layers) as an independent structure in the final block are denoted as MSIN-F2 (the last full connection layer is not included). Using different methods for multiple samples as input to the network will also result in very different classification performance.  Various MSIN variants are shown in Fig. 2.
 
+<div align=center>
 <img src="https://github.com/liangdaojun/MSIN/blob/master/images/msin_var.jpg" width="480">
+</div>
 
 We use MSIN-B to train on different datasets to get its generalization performance for simultaneous multi-task prediction. Its training process in different datasets is shown in Fig. 3. Note that each training task is trained simultaneously, except for the CIFAR-10 and SVHN datasets in Fig. 3.c. Fig. 3 shows the training and the test accuracy of the MSIN-B network on various datasets. Each task is almost unaffected by other tasks during training, which is almost indistinguishable from training the task alone.
 
+<div align=center>
 <img src="https://github.com/liangdaojun/MSIN/blob/master/images/msin_4.jpg" width="800">
+</div>
 
 Fig. 4 shows the performance of the MSIN on a multi-sample domain. It can be found that the MSIN can separate all the samples on the four different domains. The performance of the MSIN is slightly lower when predicting the four sample domains than when predicting the three sample domains. Compared with the single-sample inference network, the performance of the MSIN is slightly decline, but the availability of the MSIN is basically guaranteed. We believe that the performance of MSIN can be enhanced by some methods, and we will leave this work for the future.
 
+<div align=center>
 <img src="https://github.com/liangdaojun/MSIN/blob/master/images/msin_mfcC.jpg" width="480">
+</div>
 
 ## Training
 ```python
